@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(0,112,255);
+  background: linear-gradient(90deg, rgba(0,112,255,1) 0%, rgba(201,0,255,1) 100%);
+}
+
+:root {
+  --color-1: #f5f5f5;
+  --color-2: #0070ff;
+  --color-3: #c900ff;
+  --color-4: #ff3600;
+  --color-5: #000000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  color: var(--color-1);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.show-titles {
+  display: none;
+}
+
+.hold-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+}
