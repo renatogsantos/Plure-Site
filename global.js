@@ -1,29 +1,29 @@
 const cards = [
   {
     icon: "ph-trademark-registered",
-    title: "Renato",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    title: "Registro de Marcas",
+    description: "A marca identifica, individualiza determinado produto ou serviço, assegurando sua confiabilidade...",
   },
   {
     icon: "ph-trademark-registered",
-    title: "Helder",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    title: "Assessoria Jurídica",
+    description: "A Plure Marcas e Patentes conta com profissionais especializados na área jurídica que atuam na...",
   },
   {
     icon: "ph-trademark-registered",
-    title: "Marcio",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    title: "Depósito de Patentes",
+    description: "Patente é um título temporário de propriedade, concedido pelo Estado, cujo objetivo é a proteção...",
   },
   {
     icon: "ph-trademark-registered",
-    title: "Marcio",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    title: "Identidade Visual",
+    description: "A Identidade Visual é o conjunto de símbolos e cores que representam a marca de uma empresa...",
   },
 ];
 const card = document.getElementById("cards");
 cards.map((el) => {
   card.innerHTML += `
-		<div class="col-12 col-lg-3 g-2">
+		<div class="col-12 col-lg-3 g-2 d-flex align-items-stretch">
 			<div class="cardPlure">
         <i class="icon ${el.icon}"></i>
         <h3>${el.title}</h3>
@@ -32,6 +32,7 @@ cards.map((el) => {
 		</div>
 	`;
 });
+
 
 //============================Processo de escrita dos títulos do site============================//
 
@@ -87,4 +88,13 @@ var type1 = new Typed("#typed", {
       bottom4.style.display = "block";
     }
   },
+});
+
+//============================Processo de escrita dos títulos do site============================//
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 150) {
+    $("nav").addClass("bg-navbar-scroll");
+  } else {
+    $("nav").removeClass("bg-navbar-scroll");
+  }
 });
