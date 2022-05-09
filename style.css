@@ -1,35 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.color-1 {
+  color: #f5f5f5;
+}
+
+.color-2 {
+  color: #25127e;
+}
+
+.color-3 {
+  color: #bf78ce;
+}
+
+.color-4 {
+  color: #ff3600;
+}
+
+.color-5 {
+  color: #000000;
+}
+
+.color-6 {
+  color: #727272;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: rgb(0,112,255);
-  background: linear-gradient(90deg, rgba(0,112,255,1) 0%, rgba(201,0,255,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#25127e), to(#bf78ce));
+  background: linear-gradient(90deg, #25127e 0%, #bf78ce 100%);
 }
 
-:root {
-  --color-1: #f5f5f5;
-  --color-2: #0070ff;
-  --color-3: #c900ff;
-  --color-4: #ff3600;
-  --color-5: #000000;
+.icon {
+  font-size: 64px;
+  color: #25127e;
+}
+
+.divisorLight {
+  width: 20%;
+  height: 5px;
+  background-color: #f5f5f5;
+  margin: 30px auto;
+}
+
+.divisorDark {
+  width: 20%;
+  height: 5px;
+  background-color: #25127e;
+  margin: 30px auto;
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80vh;
-  color: var(--color-1);
+  color: #f5f5f5;
+}
+
+.hero2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.wave {
+  width: 100%;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 h1 {
   font-weight: bold;
-  font-size: 42px;
+  font-size: 5rem;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  margin-bottom: 10px;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #bf78ce;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .show-titles {
@@ -37,13 +124,35 @@ h1 {
 }
 
 .hold-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   gap: 10px;
   text-align: center;
 }
 
-.card {
+.cardPlure {
+  text-align: center;
+  color: #727272;
   width: 100%;
-  padding: 20px;
+  padding: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  -webkit-box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
+          box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
+  border-radius: 30px;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
 }
+
+.cardPlure:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 0px 10px 25px rgba(11, 23, 121, 0.3);
+          box-shadow: 0px 10px 25px rgba(11, 23, 121, 0.3);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+/*# sourceMappingURL=style.css.map */
