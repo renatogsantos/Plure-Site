@@ -66,7 +66,6 @@ const vantagens = [
     description: "A habilitação para criar franquias.",
   },
 ];
-
 const cardVantagem = document.getElementById("cardVantagem");
 vantagens.map((el) => {
   cardVantagem.innerHTML += `
@@ -80,6 +79,56 @@ vantagens.map((el) => {
   </div>`;
 });
 
+const estapasRegistro = [
+  {
+    icon: "ph-magnifying-glass",
+    title: "PESQUISA DE ANTERIORIDADE",
+    description:
+      "Antes de iniciar o processo, é realizada uma pesquisa junto ao INPI para saber se há MARCA igual ou semelhante resgistrada.",
+  },
+  {
+    icon: "ph-currency-circle-dollar",
+    title: "PAGAMENTO DA TAXA",
+    description:
+      "Realizada a pesquisa, havendo interesse no registro da MARCA, ocorre o pagamento da guia de recolhimento da União.",
+  },
+  {
+    icon: "ph-file-text",
+    title: "PROTOCOLO",
+    description:
+      "Após o pagamento, prosseguimos com o depósito/registro da MARCA junto ao INPI.",
+  },
+  {
+    icon: "ph-file-search",
+    title: "ACOMPANHAMENTO",
+    description:
+      "Com a MARCA protocolada, o INPI irá iniciar o processo de análise. Essa análise perpassa por diversas etapas, que vão desde o prazo para oposição até a decisão final.",
+  },
+  {
+    icon: "ph-file-text",
+    title: "CONCLUSÃO DO PROCESSO",
+    description:
+      "Passado o prazo de análise do INPI, será divulgada uma decisão final sobre o processo. Se INDEFERIDO abre-se o prazo de 60 dias para apresentar RECURSO. Se DEFERIDO abre-se o prazo de 60 dias para pagamento da GRU.",
+  },
+  {
+    icon: "ph-clock-counter-clockwise",
+    title: "DECÊNIO",
+    description: "Após o deferimento e pagamento, o registro da MARCA ficará vigente pelo prazo de 10 ANOS. Durante esse período a PLURE poderá acompanhar a sua MARCA, notificando possíveis usos indevidos e solicitações de registros.",
+  },
+];
+
+const cardEtapas = document.getElementById("cardEtapas");
+estapasRegistro.map((el) => {
+  cardEtapas.innerHTML += `
+  <div class="col-12 col-lg-4 g-2 d-flex align-items-stretch">
+    <div class="cardPlure2">
+      <i class="icon ${el.icon}"></i>
+      <h3>${el.title}</h3>
+      <small>${el.description}</small>
+    </div>
+  </div>
+  `;
+});
 //============================Processo de escrita dos títulos do site============================//
 
 const top1 = document.getElementById("top1");

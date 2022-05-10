@@ -21,7 +21,7 @@ $color-4: #ff3300;
 .color-4 {
   color: $color-4;
 }
-$color-5: #000000;
+$color-5: #160d3f;
 .color-5 {
   color: $color-5;
 }
@@ -115,6 +115,12 @@ body {
   justify-content: center;
   background-color: #fff;
 }
+
+.hero3 {
+  background: $color-5;
+  color: $color-1;
+}
+
 .wave {
   width: 100%;
   transform: translateY(1px);
@@ -142,7 +148,6 @@ h3 {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 17px;
-  text-align: center;
   color: $color-2;
 }
 
@@ -210,11 +215,23 @@ ol li::before {
   padding: 20px;
   background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
   box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
-  border-radius: 30px;
+  border-radius: 50px;
   transition: 0.8s ease-in;
 }
 
-.cardPlure:hover {
+.cardPlure2 {
+  text-align: center;
+  color: $color-6;
+  width: 100%;
+  min-height: 300px;
+  padding: 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
+  border-radius: 50px;
+  transition: 0.8s ease-in;
+}
+
+.cardPlure:hover, .cardPlure2:hover {
   transform: translateY(-20px);
   box-shadow: 0px 10px 25px rgba(11, 23, 121, 0.3);
   transition: 0.3s ease-out;
@@ -238,7 +255,7 @@ ol li::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #160d3f;
+  background: $color-5;
   border-radius: 20px;
   width: 60px;
   height: 60px;

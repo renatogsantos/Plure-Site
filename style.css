@@ -23,7 +23,7 @@
 }
 
 .color-5 {
-  color: #000000;
+  color: #160d3f;
 }
 
 .color-6 {
@@ -130,6 +130,11 @@ body {
   background-color: #fff;
 }
 
+.hero3 {
+  background: #160d3f;
+  color: #f5f5f5;
+}
+
 .wave {
   width: 100%;
   -webkit-transform: translateY(1px);
@@ -161,7 +166,6 @@ h3 {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 17px;
-  text-align: center;
   color: #25127e;
 }
 
@@ -234,12 +238,27 @@ ol li::before {
   background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
   -webkit-box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
           box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
-  border-radius: 30px;
+  border-radius: 50px;
   -webkit-transition: 0.8s ease-in;
   transition: 0.8s ease-in;
 }
 
-.cardPlure:hover {
+.cardPlure2 {
+  text-align: center;
+  color: #727272;
+  width: 100%;
+  min-height: 300px;
+  padding: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  -webkit-box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
+          box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
+  border-radius: 50px;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+}
+
+.cardPlure:hover, .cardPlure2:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
   -webkit-box-shadow: 0px 10px 25px rgba(11, 23, 121, 0.3);
