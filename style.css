@@ -32,19 +32,12 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(#25127e), to(#bf78ce));
-  background: linear-gradient(90deg, #25127e 0%, #bf78ce 100%);
-  background-size: cover;
+  background: url("assets/wavesbg.png"), -webkit-gradient(linear, left top, right top, from(#25127e), to(#bf78ce));
+  background: url("assets/wavesbg.png"), linear-gradient(90deg, #25127e 0%, #bf78ce 100%);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -294,16 +287,16 @@ ol li::before {
 }
 
 .buttonOne {
+  background: #bf78ce;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   border-radius: 20px;
   display: inline-block;
-  background: #bf78ce;
   color: #f5f5f5;
   padding: 15px 50px;
   margin: 5px;
   font-weight: 600;
-  -webkit-box-shadow: 0 5px 10px #0000005b;
-          box-shadow: 0 5px 10px #0000005b;
   -webkit-transition: 0.8s ease-out;
   transition: 0.8s ease-out;
 }
@@ -319,17 +312,17 @@ ol li::before {
 }
 
 .buttonTwo {
+  background: #0000005b;
+  -webkit-box-shadow: 0 5px 10px #0000005b;
+          box-shadow: 0 5px 10px #0000005b;
   text-decoration: none;
   border-radius: 20px;
   display: inline-block;
-  background: #0000005b;
   border: 2px solid #ffffff5b;
   color: #f5f5f5;
   padding: 15px 50px;
   margin: 5px;
   font-weight: 600;
-  -webkit-box-shadow: 0 5px 10px #0000005b;
-          box-shadow: 0 5px 10px #0000005b;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   -webkit-transition: 0.8s ease-out;
@@ -346,9 +339,44 @@ ol li::before {
           box-shadow: 0 8px 10px #0000009b;
 }
 
+.buttonThree {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+  -webkit-box-shadow: 0px 4px 10px rgba(37, 18, 126, 0.1);
+          box-shadow: 0px 4px 10px rgba(37, 18, 126, 0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #25127e;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.buttonThree:hover {
+  color: #bf78ce;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
 .shake-vertical {
-  -webkit-animation: shake-vertical 10s linear infinite both;
-  animation: shake-vertical 10s linear infinite both;
+  -webkit-animation: shake-vertical 15s linear infinite both;
+  animation: shake-vertical 15s linear infinite both;
 }
 
 @-webkit-keyframes shake-vertical {

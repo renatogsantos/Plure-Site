@@ -2,22 +2,26 @@ const cards = [
   {
     icon: "ph-trademark-registered",
     title: "Registro de Marcas",
-    description: "A marca identifica, individualiza determinado produto ou serviço, assegurando sua confiabilidade...",
+    description:
+      "A marca identifica, individualiza determinado produto ou serviço, assegurando sua confiabilidade...",
   },
   {
     icon: "ph-trademark-registered",
     title: "Assessoria Jurídica",
-    description: "A Plure Marcas e Patentes conta com profissionais especializados na área jurídica que atuam na...",
+    description:
+      "A Plure Marcas e Patentes conta com profissionais especializados na área jurídica que atuam na...",
   },
   {
     icon: "ph-trademark-registered",
     title: "Depósito de Patentes",
-    description: "Patente é um título temporário de propriedade, concedido pelo Estado, cujo objetivo é a proteção...",
+    description:
+      "Patente é um título temporário de propriedade, concedido pelo Estado, cujo objetivo é a proteção...",
   },
   {
     icon: "ph-trademark-registered",
     title: "Identidade Visual",
-    description: "A Identidade Visual é o conjunto de símbolos e cores que representam a marca de uma empresa...",
+    description:
+      "A Identidade Visual é o conjunto de símbolos e cores que representam a marca de uma empresa...",
   },
 ];
 const card = document.getElementById("cards");
@@ -33,6 +37,48 @@ cards.map((el) => {
 	`;
 });
 
+const vantagens = [
+  {
+    numero: "01",
+    description: "A propriedade da marca será única e exclusiva.",
+  },
+  {
+    numero: "02",
+    description:
+      "A proteção contra o uso indevido de terceiros, assegurando o direito de indenização.",
+  },
+  {
+    numero: "03",
+    description: "O direito de uso exlusivo no seu segmento mercadológico.",
+  },
+  {
+    numero: "04",
+    description:
+      "A credibilidade e seriedade que uma MARCA registrada transmite.",
+  },
+  {
+    numero: "05",
+    description:
+      "A possibilidade de licenciar, transferir ou vender o direito de uso da MARCA.",
+  },
+  {
+    numero: "06",
+    description: "A habilitação para criar franquias.",
+  },
+];
+
+const cardVantagem = document.getElementById("cardVantagem");
+vantagens.map((el) => {
+  cardVantagem.innerHTML += `
+  <div class="col-12 col-lg-4 d-flex">
+    <div class="number jello-horizontal">
+      ${el.numero}
+    </div>
+    <div class="px-2">
+      <p>${el.description}</p>
+    </div>
+  </div>`;
+});
 
 //============================Processo de escrita dos títulos do site============================//
 
@@ -90,7 +136,7 @@ var type1 = new Typed("#typed", {
   },
 });
 
-//============================Processo de escrita dos títulos do site============================//
+//============================Menu scroll============================//
 $(window).scroll(function () {
   if ($(document).scrollTop() > 150) {
     $("nav").addClass("bg-navbar-scroll");
