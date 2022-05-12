@@ -67,15 +67,21 @@ body {
   color: #f5f5f5;
 }
 
+.bg-navbar-scroll {
+  background: #25127e5b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .bg-navbar-scroll .ph-list-bold {
   font-size: 2.5rem;
-  color: #25127e;
+  color: #f5f5f5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .bg-navbar-scroll .nav-link {
-  color: #25127e;
+  color: #f5f5f5;
   font-weight: 600;
   text-decoration: none;
   -webkit-transition: 0.3s;
@@ -395,7 +401,39 @@ ol li::before {
   transition: .3s ease;
 }
 
-.buttonThree:hover {
+.buttonThree:focus, .buttonThree:hover {
+  color: #bf78ce;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.faqBtn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+  -webkit-box-shadow: 0px 4px 10px rgba(37, 18, 126, 0.1);
+          box-shadow: 0px 4px 10px rgba(37, 18, 126, 0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #25127e;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.faqBtn:focus, .faqBtn:hover {
   color: #bf78ce;
   -webkit-transition: .3s ease;
   transition: .3s ease;
