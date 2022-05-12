@@ -193,3 +193,10 @@ $(window).scroll(function () {
     $("nav").removeClass("bg-navbar-scroll");
   }
 });
+
+document.querySelector("form").addEventListener("submit", (e)=>{
+  setTimeout(()=>{
+    window.location = "/wordpress/";
+    alert("Mensagem enviada")
+  }, 2000)
+})
