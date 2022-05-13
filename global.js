@@ -3,25 +3,25 @@ const cards = [
     icon: "ph-trademark-registered",
     title: "Registro de Marcas",
     description:
-      "A marca identifica, individualiza determinado produto ou serviço, assegurando sua confiabilidade...",
+      "A marca identifica, individualiza determinado produto ou serviço, assegurando sua confiabilidade e credibilidade perante o público desejado.",
   },
   {
-    icon: "ph-trademark-registered",
+    icon: "ph-handshake",
     title: "Assessoria Jurídica",
     description:
-      "A Plure Marcas e Patentes conta com profissionais especializados na área jurídica que atuam na...",
+      "A Plure Marcas e Patentes conta com profissionais especializados na área jurídica que atuam na esfera administrativa e judicial de seus clientes e colaboradores",
   },
   {
-    icon: "ph-trademark-registered",
+    icon: "ph-files",
     title: "Depósito de Patentes",
     description:
-      "Patente é um título temporário de propriedade, concedido pelo Estado, cujo objetivo é a proteção...",
+      "Patente é um título temporário de propriedade, concedido pelo Estado, cujo objetivo é a proteção aos inventos de novos produtos, processos ou aperfeiçoamento destinados à aplicação industrial.",
   },
   {
-    icon: "ph-trademark-registered",
+    icon: "ph-paint-brush",
     title: "Identidade Visual",
     description:
-      "A Identidade Visual é o conjunto de símbolos e cores que representam a marca de uma empresa...",
+      "A Identidade Visual é o conjunto de símbolos e cores que representam a marca de uma empresa, fazendo com que o cliente se identifique com seu produto ou serviço.",
   },
 ];
 const card = document.getElementById("cards");
@@ -196,7 +196,7 @@ $(window).scroll(function () {
 
 document.querySelector("form").addEventListener("submit", (e)=>{
   setTimeout(()=>{
-    window.location = "/wordpress/";
+    window.location = "/";
     alert("Mensagem enviada")
   }, 2000)
 })
