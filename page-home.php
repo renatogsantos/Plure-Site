@@ -675,7 +675,7 @@
           </div>
           <hr>
 
-          <h4><b>TRANSFERÊNCIA DE TECNOLOGIA<b></h4>
+          <h4><b>TRANSFERÊNCIA DE TECNOLOGIA</b></h4>
 
           <a class="faqBtn" data-bs-toggle="collapse" href="#faq32" role="button" aria-expanded="false" aria-controls="faq32">
             <b>Por que fazer contratos envolvendo propriedade industrial e tecnologia?</b>
