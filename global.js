@@ -3,31 +3,19 @@ const cards = [
     icon: "ph-trademark-registered",
     title: "Registro de Marcas",
     description:
-      "A marca identifica, individualiza determinado produto ou serviço, assegurando sua confiabilidade e credibilidade perante o público desejado.",
+      "Fazer o registro de MARCA é a única forma de proteger a identidade da sua empresa. Seja o dono da sua MARCA, não deixe sua MARCA livre para seu concorrente registrar.",
   },
   {
     icon: "ph-handshake",
     title: "Assessoria Jurídica",
     description:
-      "A Plure Marcas e Patentes conta com profissionais especializados na área jurídica que atuam na esfera administrativa e judicial de seus clientes e colaboradores",
-  },
-  {
-    icon: "ph-files",
-    title: "Depósito de Patentes",
-    description:
-      "Patente é um título temporário de propriedade, concedido pelo Estado, cujo objetivo é a proteção aos inventos de novos produtos, processos ou aperfeiçoamento destinados à aplicação industrial.",
-  },
-  {
-    icon: "ph-paint-brush",
-    title: "Identidade Visual",
-    description:
-      "A Identidade Visual é o conjunto de símbolos e cores que representam a marca de uma empresa, fazendo com que o cliente se identifique com seu produto ou serviço.",
+      "Os Advogados da PLURE têm por obrigação conhecer as leis, sobretudo as leis voltadas à área da propriedade industrial e intelectual, atuando sempre com transparência, segurança e ética para garantir e proteger os interesses de sua MARCA tanto na esfera administrativa como judicial.",
   },
 ];
 const card = document.getElementById("cards");
 cards.map((el) => {
   card.innerHTML += `
-		<div class="col-12 col-lg-3 g-2 d-flex align-items-stretch">
+		<div class="col-12 col-lg-6 g-2 d-flex align-items-stretch">
 			<div class="cardPlure">
         <i class="icon ${el.icon}"></i>
         <h3>${el.title}</h3>
@@ -40,7 +28,7 @@ cards.map((el) => {
 const vantagens = [
   {
     numero: "01",
-    description: "A propriedade da marca será única e exclusiva.",
+    description: "A propriedade da MARCA será única e exclusiva.",
   },
   {
     numero: "02",
