@@ -182,16 +182,3 @@ $(window).scroll(function () {
     $("nav").removeClass("bg-navbar-scroll");
   }
 });
-
-document.querySelector("wpcf7-f11-o3 form").addEventListener("submit", (e)=>{
-  setTimeout(()=>{
-    window.location = "/";
-    alert("Mensagem enviada")
-  }, 2000)
-})
-document.querySelector("wpcf7-f14-o2 form").addEventListener("submit", (e)=>{
-  setTimeout(()=>{
-    window.location = "/";
-    alert("Mensagem enviada")
-  }, 2000)
-})

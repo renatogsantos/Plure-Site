@@ -977,6 +977,7 @@
     <p class="m-0">Todo os direitos reservados</p>
   </footer>
 
+  <?php wp_footer();?>
   <script src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/typed.min.js"></script>
   <script src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/global.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
