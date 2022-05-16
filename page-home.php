@@ -46,6 +46,9 @@
               <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#about"><i class="ph-users-three me-2"></i> Sobre</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#prices"><i class="ph-currency-circle-dollar me-2"></i> Preços</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#blog"><i class="ph-newspaper me-2"></i> Blog</a>
             </li>
             <li class="nav-item">
@@ -370,7 +373,7 @@
     <img class="wave2" src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/wave2.svg" alt="curvas">
   </section>
 
-  <section>
+  <section id="prices">
     <div class="container-fluid py-5">
       <div class="container py-5 text-light text-center">
         <h2>Tabela de Preços</h2>
