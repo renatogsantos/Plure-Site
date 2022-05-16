@@ -41,8 +41,10 @@ Version: 1.0
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: url("assets/wavesbg.png"), -webkit-gradient(linear, left top, right top, from(#25127e), to(#bf78ce));
-  background: url("assets/wavesbg.png"), linear-gradient(90deg, #25127e 0%, #bf78ce 100%);
+  background: url("assets/wavesbg.png"),
+    -webkit-gradient(linear, left top, right top, from(#25127e), to(#bf78ce));
+  background: url("assets/wavesbg.png"),
+    linear-gradient(90deg, #25127e 0%, #bf78ce 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -52,7 +54,7 @@ body {
 .navbar {
   background: #160d3f8b;
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-  border-bottom:1px solid #ffffff5b;
+  border-bottom: 1px solid #ffffff5b;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
@@ -63,15 +65,15 @@ body {
   color: #f5f5f5;
   font-weight: 600;
   text-decoration: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.nav-link:hover, .nav-link:focus {
-  color:#f5f5f5;
+.nav-link:hover,
+.nav-link:focus {
+  color: #f5f5f5;
   transform: translateY(-3px);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 
 .navbar .ph-list-bold {
   font-size: 2.5rem;
@@ -141,7 +143,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
   color: #f5f5f5;
 }
 
@@ -188,11 +190,19 @@ h2 {
 
 h3 {
   font-family: "Montserrat";
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 17px;
   color: #25127e;
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -205,6 +215,33 @@ h3 {
     font-size: 2rem;
     line-height: 2rem;
   }
+}
+
+#contact .cardInviteModal {
+  display: none;
+}
+
+.modal-body .formPlure {
+  display: none;
+}
+
+.cardInvite {
+  background: rgba(22, 13, 63, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(50px);
+  border-radius: 50px;
+  padding: 30px;
+  color: #fff;
+}
+.cardInvite h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+}
+.cardInvite p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .cardBox ul {
@@ -223,6 +260,14 @@ h3 {
   margin-left: -1.3em;
   width: 1.3em;
   color: #ff3300;
+}
+
+.cardPrice {
+  background: -webkit-linear-gradient(45deg,#bf78ce, #25127e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 900;
 }
 
 ol {
@@ -260,8 +305,14 @@ ol li::before {
   text-align: center;
   color: #727272;
   width: 100%;
-  padding: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  padding: 30px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#f5f5f5)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
   -webkit-box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
   box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
@@ -276,7 +327,13 @@ ol li::before {
   width: 100%;
   min-height: 300px;
   padding: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#f5f5f5)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
   -webkit-box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
   box-shadow: 0px 10px 15px rgba(11, 23, 121, 0.1);
@@ -388,7 +445,13 @@ ol li::before {
 }
 
 .buttonThree {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#f4f4f4)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -412,19 +475,25 @@ ol li::before {
   text-align: center;
   text-transform: uppercase;
   color: #25127e;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .buttonThree:focus,
 .buttonThree:hover {
   color: #bf78ce;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .faqBtn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#f4f4f4)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
   -webkit-box-shadow: 0px 4px 10px rgba(37, 18, 126, 0.1);
   box-shadow: 0px 4px 10px rgba(37, 18, 126, 0.1);
@@ -445,15 +514,15 @@ ol li::before {
   align-items: center;
   text-transform: uppercase;
   color: #25127e;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .faqBtn:focus,
 .faqBtn:hover {
   color: #bf78ce;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .shake-vertical {
@@ -462,7 +531,6 @@ ol li::before {
 }
 
 @-webkit-keyframes shake-vertical {
-
   0%,
   100% {
     -webkit-transform: translateY(0);
@@ -496,7 +564,6 @@ ol li::before {
 }
 
 @keyframes shake-vertical {
-
   0%,
   100% {
     -webkit-transform: translateY(0);
@@ -713,7 +780,13 @@ ol li::before {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
   padding: 10px 5px;
 
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#f4f4f4)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
   -webkit-box-shadow: 0px 4px 10px rgb(37 18 126 / 10%);
   box-shadow: inset 0px 4px 10px rgb(37 18 126 / 10%);
@@ -723,8 +796,8 @@ ol li::before {
   font-style: normal;
   font-size: 14px;
   line-height: 29px;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .InputTextArea {
@@ -735,7 +808,13 @@ ol li::before {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
   padding: 10px 5px;
 
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#f4f4f4)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
   -webkit-box-shadow: 0px 4px 10px rgb(37 18 126 / 10%);
   box-shadow: inset 0px 4px 10px rgb(37 18 126 / 10%);
@@ -745,15 +824,15 @@ ol li::before {
   font-style: normal;
   font-size: 14px;
   line-height: 29px;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .Input:hover,
 .Input:hover,
 .InputTextArea:hover {
   transform: scale(1.015);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .Input:focus,

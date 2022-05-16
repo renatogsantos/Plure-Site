@@ -14,6 +14,7 @@ const cards = [
 ];
 const card = document.getElementById("cards");
 cards.map((el) => {
+  console.log(el)
   card.innerHTML += `
 		<div class="col-12 col-lg-6 g-2 d-flex align-items-stretch">
 			<div class="cardPlure">
@@ -182,7 +183,13 @@ $(window).scroll(function () {
   }
 });
 
-document.querySelector("form").addEventListener("submit", (e)=>{
+document.querySelector("wpcf7-f11-o3 form").addEventListener("submit", (e)=>{
+  setTimeout(()=>{
+    window.location = "/";
+    alert("Mensagem enviada")
+  }, 2000)
+})
+document.querySelector("wpcf7-f14-o2 form").addEventListener("submit", (e)=>{
   setTimeout(()=>{
     window.location = "/";
     alert("Mensagem enviada")
