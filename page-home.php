@@ -377,7 +377,7 @@
         <div class="divisorLightCenter"></div>
         <div class="row g-2">
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Pesquisa de Viabilidade da Marca</h3>
@@ -388,7 +388,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Diagnóstico de Classificação</h3>
@@ -399,7 +399,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Depósito/Registro e Acompanhamento</h3>
@@ -411,7 +411,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Depósito/Registro (Classe Extra)</h3>
@@ -423,7 +423,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Oposição</h3>
@@ -435,7 +435,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Deferimento</h3>
@@ -446,7 +446,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Recurso Administrativo (Indeferimento)</h3>
@@ -458,7 +458,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-3 d-flex align-items-stretch justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
               <small>Pocedimento / Fase</small>
               <h3>Acompanhamento Decênio</h3>
