@@ -46,9 +46,6 @@
               <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#about"><i class="ph-users-three me-2"></i> Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#blog"><i class="ph-newspaper me-2"></i> Blog</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="ph-question me-2"></i>FAQ</a>
             </li>
             <li class="nav-item">
@@ -74,18 +71,17 @@
     <div class="container hero">
       <div>
         <h4 id="top1" class="show-titles">ASSESSORIA JURÍDICA</h4>
-        <h4 id="top2" class="show-titles">IDENTIDADE VISUAL</h4>
+        <h4 id="top2" class="show-titles pt-4 pb-1"></h4>
         <h4 id="top3" class="show-titles">REGISTRO DE MARCAS</h4>
-        <h4 id="top4" class="show-titles">DEPÓSITO DE PATENTES</h4>
+        <h4 id="top4" class="show-titles pt-4 pb-1"></h4>
 
         <h1><span id="typed"></span></h1>
 
         <p id="bottom1" class="show-titles">Advogados especializados na área de Propriedade Intelectual</p>
-        <p id="bottom2" class="show-titles">Criação de Identidade Visual e logotipo para fortalecer sua marca</p>
+        <p id="bottom2" class="show-titles pt-4 pb-1"></p>
         <p id="bottom3" class="show-titles">O Registro de Marca no INPI garante ao titular a exclusividade de uso em
           todo território nacional no seu ramo de atividade.</p>
-        <p id="bottom4" class="show-titles">O Depósito de Patente garante ao titular a impossibilidade de terceiros
-          explorarem seu invento, como vender, produzir, usar, etc.</p>
+        <p id="bottom4" class="show-titles pt-4 pb-1"></p>
 
         <a class="buttonOne" href="<?php echo get_site_url(); ?>/#about">Saiba Mais</a>
         <a class="buttonTwo" href="<?php echo get_site_url(); ?>/#contact">Contato</a>
@@ -351,6 +347,7 @@
   <footer class="container-fluid py-5 hero3 text-center">
     <p class="m-0">Todo os direitos reservados</p>
   </footer>
+
 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

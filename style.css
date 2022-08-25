@@ -38,7 +38,6 @@ Version: 1.0
 .color-6 {
   color: #727272;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   background: url("assets/wavesbg.png"),
@@ -50,7 +49,84 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
+.whatsappFloat{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background: #160d3f;
+  color: #fff;
+  font-size: 36px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid #ffffff5b;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  overflow: hidden;
+}
+.whatsappFloat span{
+  position: absolute;
+  width: 125px;
+  right: calc(100% + 15px);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  text-align: center;
+  background: #150d3f;
+  padding: 5px;
+  border-radius: 10px;
+}
+.whatsappFloat span::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg) translateY(-50%);
+  background: #150d3f;
+  z-index: 0;
+}
+.whatsappFloat:hover, .whatsappFloat:focus{
+  overflow: visible;
+  color: #fff;
+}
+.slide-in-br {
+	-webkit-animation: slide-in-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+  animation: slide-in-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+@-webkit-keyframes slide-in-br {
+  0% {
+    -webkit-transform: translateY(1000px) translateX(1000px);
+            transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-br {
+  0% {
+    -webkit-transform: translateY(1000px) translateX(1000px);
+            transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
 .navbar {
   background: #160d3f8b;
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -143,7 +219,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
   color: #f5f5f5;
 }
 
@@ -216,7 +292,9 @@ p {
     line-height: 2rem;
   }
 }
-
+.border-50{
+  border-radius: 50px;
+}
 #contact .cardInviteModal {
   display: none;
 }
@@ -524,12 +602,36 @@ ol li::before {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-
+.paymentMethods{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
 .shake-vertical {
   -webkit-animation: shake-vertical 15s linear infinite both;
   animation: shake-vertical 15s linear infinite both;
 }
-
+.linksFooter{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.linksFooter a{
+  color: #fff;
+  font-size: 28px;
+  transition: .6s;
+}
+.linksFooter a:focus, .linksFooter a:hover {
+  color: #bf78ce;
+  transition: .3s;
+}
 @-webkit-keyframes shake-vertical {
   0%,
   100% {
@@ -844,5 +946,15 @@ ol li::before {
 .form-contato button {
   margin: 20px auto 0;
 }
-
+#cookie-notice{
+  box-shadow: 2px 0 5px 1px #00000020 !important;
+  background: #fff !important;
+  padding: 10px 0 !important;
+}
+#cookie-notice.cn-position-bottom{
+  padding: 0px 0px !important;
+}
+#cn-accept-cookie{
+  color: #fff !important;
+}
 /*# sourceMappingURL=style.css.map */

@@ -6,17 +6,29 @@ const cards = [
       "Fazer o registro de MARCA é a única forma de proteger a identidade da sua empresa. Seja o dono da sua MARCA, não deixe sua MARCA livre para seu concorrente registrar.",
   },
   {
+    icon: "ph-medal",
+    title: "Garantia Plure",
+    description:
+      "Caso sua MARCA seja INDEFERIDA, damos entrada em outro nome escolhido por você, sem a cobrança de honorários. É preciso pagar apenas as taxas do Governo. A garantia é válida para UMA CLASSE, havendo interesse no registro de mais classes, aplica-se a tabela de honorários.",
+  },
+  {
+    icon: "ph-binoculars",
+    title: "Monitoramento e Vigilância",
+    description:
+      "Após a obtenção do certificado de registro, continuamos acompanhando o portifólio de marcas semanalmente. Este serviço é realizando através de softwares integrados ao banco de dados do Instituto Nacional da Propriedade Industrial - INPI - , que possibilidade a verificação que concorrentes não estão entrando com pedido de registro de marca igual ou semelhante a sua.",
+  },
+  {
     icon: "ph-handshake",
     title: "Assessoria Jurídica",
     description:
       "Os Advogados da PLURE têm por obrigação conhecer as leis, sobretudo as leis voltadas à área da propriedade industrial e intelectual, atuando sempre com transparência, segurança e ética para garantir e proteger os interesses de sua MARCA tanto na esfera administrativa como judicial.",
   },
+  
 ];
 const card = document.getElementById("cards");
 cards.map((el) => {
-  console.log(el)
   card.innerHTML += `
-		<div class="col-12 col-lg-6 g-2 d-flex align-items-stretch">
+		<div class="col-12 col-md-6 col-xl-3 g-2 d-flex align-items-stretch">
 			<div class="cardPlure">
         <i class="icon ${el.icon}"></i>
         <h3>${el.title}</h3>
@@ -101,8 +113,8 @@ const estapasRegistro = [
   },
   {
     icon: "ph-clock-counter-clockwise",
-    title: "DECÊNIO",
-    description: "Após o deferimento e pagamento, o registro da MARCA ficará vigente pelo prazo de 10 ANOS. Durante esse período a PLURE poderá acompanhar a sua MARCA, notificando possíveis usos indevidos e solicitações de registros.",
+    title: "CERTIFICADO DE REGISTRO",
+    description: "Após o deferimento do pedido de registro e o pagamento da GRU pelo cliente, a PLURE irá emitir junto ao INPI o Certificado de Registro da Marca e encaminhará para o seu email. O Registro da sua MARCA terá vigência de 10 ANOS a contar da emissão do Certificado.",
   },
 ];
 
@@ -128,8 +140,8 @@ const bottom1 = document.getElementById("bottom1");
 const bottom2 = document.getElementById("bottom2");
 const bottom3 = document.getElementById("bottom3");
 const bottom4 = document.getElementById("bottom4");
-var type1 = new Typed("#typed", {
-  stringsElement: "#typed-strings",
+var type1 = new Typed("#typedTitle", {
+  stringsElement: "#typed-strings-title",
   typeSpeed: 100,
   backSpeed: 50,
   loop: Infinity,

@@ -49,9 +49,6 @@
               <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#prices"><i class="ph-currency-circle-dollar me-2"></i> Preços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#blog"><i class="ph-newspaper me-2"></i> Blog</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active d-flex align-items-center" href="<?php echo get_site_url(); ?>/#duvidas"><i class="ph-question me-2"></i>FAQ</a>
             </li>
             <li class="nav-item">
@@ -66,7 +63,7 @@
   <section id="home">
     <!--typed by youself-->
     <div>
-      <div id="typed-strings">
+      <div id="typed-strings-title">
         <p>Proteja sua criatividade!</p>
         <p>Garanta sua marca!</p>
         <p>Protegemos sua Marca!</p>
@@ -77,19 +74,17 @@
     <div class="container hero">
       <div>
         <h4 id="top1" class="show-titles">ASSESSORIA JURÍDICA</h4>
-        <h4 id="top2" class="show-titles">IDENTIDADE VISUAL</h4>
+        <h4 id="top2" class="show-titles pt-4 pb-1"></h4>
         <h4 id="top3" class="show-titles">REGISTRO DE MARCAS</h4>
-        <h4 id="top4" class="show-titles">DEPÓSITO DE PATENTES</h4>
+        <h4 id="top4" class="show-titles pt-4 pb-1"></h4>
 
-        <h1><span id="typed"></span></h1>
+        <h1><span id="typedTitle"></span></h1>
 
         <p id="bottom1" class="show-titles">Advogados especializados na área de Propriedade Intelectual</p>
-        <p id="bottom2" class="show-titles">Criação de Identidade Visual e logotipo para fortalecer sua marca</p>
+        <p id="bottom2" class="show-titles pt-4 pb-1"></p>
         <p id="bottom3" class="show-titles">O Registro de Marca no INPI garante ao titular a exclusividade de uso em
           todo território nacional no seu ramo de atividade.</p>
-        <p id="bottom4" class="show-titles">O Depósito de Patente garante ao titular a impossibilidade de terceiros
-          explorarem seu invento, como vender, produzir, usar, etc.</p>
-
+        <p id="bottom4" class="show-titles pt-4 pb-1"></p>
         <a class="buttonOne" href="<?php echo get_site_url(); ?>/#about">Saiba Mais</a>
         <a class="buttonTwo" href="<?php echo get_site_url(); ?>/#contact">Contato</a>
       </div>
@@ -127,10 +122,18 @@
   <section id="about">
     <img class="wave" src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/wave.svg" alt="curvas">
     <div class="container-fluid py-5 hero2">
-      <div class="container py-5 text-center">
+      <div class="container-fluid py-5 text-center">
         <h2 class="color-2">Sobre a Plure</h2>
         <div class="divisorDarkCenter"></div>
         <div id="cards" class="row text-center d-flex align-items-stretch justify-content-center"></div>
+      </div>
+    </div>
+    <div class="container-fluid pb-5 hero2">
+      <div class="container-fluid pb-5 text-center">
+        <strong class="color-3">
+          <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/localAtendimento.svg" width="100px" alt="">
+          Atendemos Registros de Marcas em todo o Brasil.
+        </strong>
       </div>
     </div>
     <img class="wave2" src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/wave2.svg" alt="curvas">
@@ -366,8 +369,28 @@
             </p>
           </div>
         </div>
-        <small class="color-3">*Acompanhamento durante o decênio será efetuado mediante contratação e pagamento de
-          anuidade.</small>
+        <small class="color-3">
+        *Acompanhamento durante o decênio será efetuado mediante a contratação do Serviço Individual de MONITORAMENTO E VIGILÂNCIA.
+        </small>
+      </div>
+    </div>
+    <div class="container-fluid hero2 m-0 pb-5">
+      <div class="container border-50 mb-5 py-5 hero3 text-center">
+        <div class="container">
+          <h2>SERVIÇOS INDIVIDUAIS</h2>
+          <div class="divisorLightCenter"></div>
+          <div class="row d-flex align-itens-center justify-content-center">
+            <div class="col-12 col-md-6 d-flex align-items-stretch justify-content-center">
+              <div class="cardPlure">
+                <h3>MONITORAMENTO E VIGILÂNCIA</h3>
+                <small>Durante o Decênio a PLURE fará o monitoramento e vigilância da sua MARCA, notificando possíveis usos indevidos da sua MARCA e surgimento de MARCAS SIMILARES.</small><br />
+                <p class="cardPrice d-inline">R$ 296,00</p>
+                <small>/ano</small><br />
+                <small>(Por Classe)</small><br>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <img class="wave2" src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/wave2.svg" alt="curvas">
@@ -375,14 +398,14 @@
 
   <section id="prices">
     <div class="container-fluid py-5">
-      <div class="container py-5 text-light text-center">
+      <div class="container pt-5 text-light text-center">
         <h2>Tabela de Preços</h2>
         <div class="divisorLightCenter"></div>
-        <div class="row g-2">
+        <div class="row g-2 align-items-stretch justify-content-center">
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Pesquisa de Viabilidade da Marca</h3>
               <small>Honorários</small>
               <p class="cardPrice">Grátis</p>
@@ -393,7 +416,7 @@
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Diagnóstico de Classificação</h3>
               <small>Honorários</small>
               <p class="cardPrice">Grátis</p>
@@ -404,7 +427,7 @@
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Depósito/Registro e Acompanhamento</h3>
               <small>Honorários</small>
               <p class="cardPrice">R$ 1.500,00</p>
@@ -416,7 +439,7 @@
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Depósito/Registro (Classe Extra)</h3>
               <small>Honorários</small>
               <p class="cardPrice">R$ 494,00</p>
@@ -428,7 +451,7 @@
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Oposição</h3>
               <small>Honorários</small>
               <p class="cardPrice">R$ 296,00</p>
@@ -440,7 +463,7 @@
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Deferimento</h3>
               <small>Honorários</small>
               <p class="cardPrice">Grátis</p>
@@ -451,7 +474,7 @@
 
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
             <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
+              <small>Procedimento / Fase</small>
               <h3>Recurso Administrativo (Indeferimento)</h3>
               <small>Honorários</small>
               <p class="cardPrice">R$ 395,00</p>
@@ -460,30 +483,98 @@
               <small>R$ 475,00 (Por Classe)</small>
             </div>
           </div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-stretch justify-content-center">
-            <div class="cardPlure">
-              <small>Pocedimento / Fase</small>
-              <h3>Acompanhamento Decênio</h3>
-              <small>Honorários</small>
-              <p class="cardPrice">R$ 296,00</p>
-              <small>(Por Classe)* Anuidade</small><br>
-              <small>GRU INPI</small><br>
-              <small>---</small>
-            </div>
-          </div>
-
         </div>
-        <div class="p-4">
+        <div class="pt-4 px-4">
           <p>* Manifestações e procedimentos diversos, consultar valores de honorários e taxas do INPI.</p>
         </div>
       </div>
-    </div>
+      
   </section>
 
-  <section id="duvidas">
+
+  <section>
     <img class="wave" src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/wave.svg" alt="curvas">
-    <div class="container-fluid py-5 hero2 text-center">
+    <div class="container-fluid py-3 text-center hero2 m-0">
+      <div class="container pb-4">
+        <ul class="paymentMethods">
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/visa.png" width="61" alt="visa">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/mastercard.png" width="66" alt="mastercard">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/elo.png" width="41" alt="elo">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/american-express.png" width="73" alt="american express">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/dinersclub.png" width="106" alt="diners club">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/boleto.png" width="52" alt="boleto">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/pix.png" width="74" alt="pix">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/caixa.png" width="81" alt="">
+          </li>
+          <li>
+            <img src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/assets/payment/sicoob.png" width="100" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="container-fluid  text-center hero2 m-0 pt-5">
+      <div class="container pt-5">
+        <h2 class="color-2">Como trabalhamos</h2>
+        <div class="divisorDarkCenter"></div>
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="cardPlure">
+              <i class="icon ph-file-search"></i>
+              <p class="color-2">Solicite sua Pesquisa de Viabilidade em nosso site</p>
+            </div>
+
+            <i class="align-self-center m-2 m-xl-4 d-none d-lg-flex icon fas fa-arrow-right"></i>
+            <i class="align-self-center m-4 d-flex d-lg-none icon fas fa-arrow-down"></i>
+
+            <div class="cardPlure">
+              <i class="icon ph-magnifying-glass-plus"></i><br />
+              <p class="color-2">Entramos em contato por e-mail para buscar as informações e esclarecer dúvidas.</p>
+            </div>
+
+            <i class="align-self-center m-2 m-xl-4 d-none d-lg-flex icon fas fa-arrow-right"></i>
+            <i class="align-self-center m-4 d-flex d-lg-none icon fas fa-arrow-down"></i>
+
+            <div class="cardPlure">
+              <i class="icon fas fa-envelope-open-text"></i>
+              <p class="color-2">Enviaremos por email a Pesquisa, Contrato e demais informações.</p>
+            </div>
+
+            <i class="align-self-center m-2 m-xl-4 d-none d-lg-flex icon fas fa-arrow-right"></i>
+            <i class="align-self-center m-4 d-flex d-lg-none icon fas fa-arrow-down"></i>
+
+            <div class="cardPlure">
+              <i class="icon ph-list-checks"></i>
+              <p class="color-2">Contrate nosso serviço, efetue o pagamento e damos início ao processo</p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#cardInvite" class="buttonOne" href="<?php echo get_site_url(); ?>/#about">
+            Registre sua marca agora
+            </a>
+            <a class="buttonTwo" href="<?php echo get_site_url(); ?>/#contact">
+            Fale com um especialista
+            </a>
+          </div>
+      </div>
+    </div>
+
+    <div  id="duvidas" class="container-fluid py-5 hero2 text-center">
       <div class="container py-5">
         <h2 class="color-2">perguntas frequentes</h2>
         <div class="divisorDarkCenter"></div>
@@ -599,7 +690,7 @@
           </div>
           <hr>
 
-          <h4><b>DESENHO INDUSTRIAL</b></h4>
+          <!-- <h4><b>DESENHO INDUSTRIAL</b></h4>
 
           <a class="faqBtn" data-bs-toggle="collapse" href="#faq13" role="button" aria-expanded="false" aria-controls="faq13">
             <b>O que é registro de desenho industrial?</b>
@@ -952,7 +1043,7 @@
               Após a emissão do respectivo Certificado de Averbação a empresa poderá, de acordo com a Resolução BACEN nº 3.844/2010 e Regulamento anexo III, proceder ao Registro Declatório Eletrônico - Registro de Operação Financeira (RDE/ROF) por transferência de tecnologia, acessando o SISBACEN, por intermédio de uma
               instituição financeira ou por meios próprios.
             </p>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -973,9 +1064,36 @@
     </div>
   </section>
   
-  <footer class="container-fluid py-5 hero3 text-center">
-    <p class="m-0">Todo os direitos reservados</p>
+  <footer class="container-fluid py-5 hero3">
+    <div class="container d-flex align-items-center justify-content-evenly">
+      <span class="m-0 pe-3">Todos os direitos reservados<br />
+      Av. Siqueira Campos, 940, sala 103, Centro Histórico - Porto Alegre/RS
+      </span>
+      <ul class="linksFooter">
+        <li>
+          <a href="https://wa.me/5551993204603" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/pluremarcas/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://pt-br.facebook.com/pluremarcas" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </footer>
+
+  <a href="https://wa.me/5551993204603" target="_blank" class="whatsappFloat slide-in-br" tabindex="0">
+    <span>Fale conosco pelo WhatsApp!</span>
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <?php wp_footer();?>
   <script src="<?php  echo get_theme_root_uri(); ?>/Plure-Site/typed.min.js"></script>
